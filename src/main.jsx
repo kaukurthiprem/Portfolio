@@ -12,10 +12,10 @@ const projects = [
   {
     id: '01',
     category: 'WEB DEVELOPMENT',
-    title: 'Dynamic Blog Application',
-    subtitle: 'PHP · MySQL · Apache',
-    description: 'Built a dynamic blog application in a local server environment with database setup, user authentication, CRUD functionality, and security enhancements.',
-    tags: ['PHP', 'MySQL', 'HTML', 'CSS', 'XAMPP'],
+    title: 'ApexPlanet Internship — PHP & MySQL Projects',
+    subtitle: 'PHP · MySQL · Full-Stack Web Development',
+    description: 'Completed four internship tasks: a secure authentication system with bcrypt and JWT; a blog application with CRUD, image uploads, and user access control; an admin panel for users, posts, and categories with role-based authorization; and security enhancements covering SQL injection prevention, XSS protection, password handling, and session management.',
+    tags: ['PHP', 'MySQL', 'Authentication', 'CRUD', 'Admin Panel', 'Security', 'XAMPP'],
     icon: Globe,
     color: 'mint',
     link: 'https://github.com/kaukurthiprem/APEXPLANET_INTERNSHIP_WEB-DEVELOPER-IN-PHP-MYSQL',
@@ -57,8 +57,8 @@ const projects = [
     tags: ['Python', 'Automation', 'Testing'],
     icon: Terminal,
     color: 'peach',
-    link: '',
-    linkLabel: '',
+    link: 'https://github.com/kaukurthiprem/PRODIGY_INTERNSHIP-DATA-SCINCE--video',
+    linkLabel: 'View repository',
     note: 'Prodigy InfoTech internship tasks'
   },
   {
@@ -83,7 +83,7 @@ const projects = [
     tags: ['Face recognition', 'Attendance system', 'Computer vision'],
     icon: ScanFace,
     color: 'blue',
-    link: 'https://github.com/kaukurthiprem/Face-Recognition-Attendance-System-main',
+    link: 'https://github.com/kaukurthiprem/Face_emotional_recitation',
     linkLabel: 'View repository',
     note: 'Public GitHub project'
   },
@@ -105,8 +105,8 @@ const projects = [
     category: 'FULL-STACK DEVELOPMENT',
     title: 'MERN OAuth Image Search',
     subtitle: 'JavaScript · MERN · OAuth',
-    description: 'A JavaScript repository for an OAuth-enabled image search application. Use the repository to review its architecture, authentication flow, and implemented features.',
-    tags: ['JavaScript', 'MERN', 'OAuth', 'Image search'],
+    description: 'Built a MERN full-stack image search application with Google OAuth 2.0 login and logout, Unsplash API image search, and MongoDB-powered search history. Includes a responsive React frontend and Node.js + Express backend.',
+    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Google OAuth 2.0', 'Unsplash API'],
     icon: Search,
     color: 'peach',
     link: 'https://github.com/kaukurthiprem/MERN-OAuth-Image-Search-Application-UD-STUDIOS-',
@@ -138,6 +138,45 @@ const projects = [
     link: '',
     linkLabel: '',
     note: 'Prodigy InfoTech internship tasks'
+  },
+  {
+    id: '11',
+    category: 'ARTIFICIAL INTELLIGENCE',
+    title: 'CodeAlpha Artificial Intelligence Internship',
+    subtitle: 'Python · Artificial Intelligence',
+    description: 'Internship project repository containing work completed during the CodeAlpha Artificial Intelligence internship. Explore the repository for task-level implementation details.',
+    tags: ['Python', 'Artificial Intelligence', 'Internship'],
+    icon: Cpu,
+    color: 'lilac',
+    link: 'https://github.com/kaukurthiprem/CodeAlpha-Artificial-Intelligence_internship',
+    linkLabel: 'View repository',
+    note: 'CodeAlpha internship repository'
+  },
+  {
+    id: '12',
+    category: 'INTERNSHIP',
+    title: 'Mallikarjuna Infosys — Data Analytics & Business Intelligence',
+    subtitle: 'Data Analytics · Business Intelligence',
+    description: 'Completed internship work focused on Data Analytics and Business Intelligence. Visit the repository to review the available project files and implementation details.',
+    tags: ['Data Analytics', 'Business Intelligence', 'Internship'],
+    icon: BriefcaseBusiness,
+    color: 'blue',
+    link: 'https://github.com/kaukurthiprem/MALLIKARJUNA_INFOSYS-INTERNSHIP',
+    linkLabel: 'View repository',
+    note: 'Mallikarjuna Infosys internship repository'
+  },
+  {
+    id: '13',
+    category: 'AUTOMATION',
+    title: 'Pinnacle Python Development Internship',
+    subtitle: 'Python · Development',
+    description: 'Python development work completed during the Pinnacle internship. Visit the repository to review the individual tasks and source code.',
+    tags: ['Python', 'Development', 'Internship'],
+    icon: Terminal,
+    color: 'peach',
+    link: 'https://github.com/kaukurthiprem/PINNACLE_INTERNSHIP_PYTHON_DEVELOPMENT',
+    linkLabel: 'View repository',
+    note: 'Pinnacle internship repository'
   }
 ];
 
@@ -162,7 +201,7 @@ const experiences = [
   },
   {
     company: 'Prodigy InfoTech',
-    role: 'Freelancer / Full Stack Developer Internship',
+    role: 'Full Stack Development Intern',
     date: 'JUN — JUL 2025',
     type: 'FULL-STACK & AUTOMATION',
     bullets: [
@@ -228,13 +267,6 @@ function App() {
     nodes.forEach(node => observer.observe(node));
     return () => observer.disconnect();
   }, [filter]);
-  const downloadResume = () => {
-    const a = document.createElement('a');
-    a.href = '/resume.pdf';
-    a.download = 'K-Prem-Kumar-Resume.pdf';
-    a.click();
-  };
-
   return <div className="app">
     <div className="top-note"><span className="top-note-dot"/> OPEN TO ENTRY-LEVEL ROLES & FREELANCE PROJECTS <span className="top-note-right">Bengaluru</span></div>
     <header className="header">
@@ -254,7 +286,7 @@ function App() {
           <p className="hero-intro">I'm <strong>Kasukurthi Prem Kumar</strong> — a developer interested in web applications, backend systems, data analysis, and machine learning. I like making ideas work, not just look good.</p>
           <div className="hero-buttons">
             <a className="btn btn-primary" href="#work">Explore my projects <ArrowRight size={16}/></a>
-            <button className="btn btn-quiet" onClick={downloadResume}>Download resume <ArrowDownRight size={16}/></button>
+            <a className="btn btn-quiet" href="/resume.pdf" download="K-Prem-Kumar-Resume.pdf">Download resume <ArrowDownRight size={16}/></a>
           </div>
           <div className="hero-contact-row">
             <a href="mailto:kasukurthiprem1835@gmail.com"><Mail size={15}/> kasukurthiprem1835@gmail.com</a>
@@ -314,7 +346,26 @@ function App() {
           <div className="projects-grid">
             {visibleProjects.map(project => {
               const Icon = project.icon;
-              return <article className="project-card" key={project.id}>
+              const openProject = () => {
+                if (project.link) window.open(project.link, '_blank', 'noopener,noreferrer');
+              };
+              const handleProjectKeyDown = (event) => {
+                if (project.link && (event.key === 'Enter' || event.key === ' ')) {
+                  event.preventDefault();
+                  openProject();
+                }
+              };
+              return <article
+                className={`project-card${project.link ? ' project-card-linked' : ''}`}
+                key={project.id}
+                onClick={(event) => {
+                  if (project.link && !event.target.closest('a, button')) openProject();
+                }}
+                onKeyDown={handleProjectKeyDown}
+                role={project.link ? 'link' : undefined}
+                tabIndex={project.link ? 0 : undefined}
+                aria-label={project.link ? `Open ${project.title} GitHub repository in a new tab` : undefined}
+              >
                 <div className={`project-art ${project.color}`}>
                   <div className="art-grid"/>
                   <div className="project-art-top"><span>PROJECT / {project.id}</span><span>{project.category}</span></div>

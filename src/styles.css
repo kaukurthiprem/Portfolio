@@ -195,3 +195,8 @@ button:focus-visible,a:focus-visible{outline:2px solid #c4b6ff;outline-offset:4p
 @media(max-width:900px){.header{padding:0 22px}.hero{min-height:600px;padding-top:60px}.hero h1{font-size:clamp(46px,6vw,64px);letter-spacing:-3px}}
 @media(max-width:680px){.header{padding:0 18px}.hero{padding-top:49px}.hero h1{font-size:clamp(42px,11vw,57px);letter-spacing:-2.6px}.terminal-window{transform:none}.hero-right:hover .terminal-window{transform:translateY(-3px)}.project-card:hover{transform:translateY(-4px)}.reveal{filter:none;transform:translateY(15px)}.app::before{background-size:44px 44px}.contact-glow{width:260px;height:240px}}
 @media(prefers-reduced-motion:reduce){.app::before,.app::after,.top-note-dot,.logo-icon::after,.hero h1 .highlight,.hero-left,.hero-right,.hero-glow,.hero-orbit,.floating-stat,.scroll-link span,.metrics-band::before,.project-card,.contact-glow{animation:none!important}.project-card{opacity:1;animation:none!important}.btn::before{display:none}.project-card,.skill-card,.achievement-card,.terminal-window{transition:none!important}.reveal{filter:none;opacity:1;transform:none;transition:none}}
+
+/* Project cards with a repository are clickable only inside their visible boundary. */
+.project-card-linked { cursor: pointer; }
+.project-card-linked:focus-visible { outline: 2px solid #b9a6ff; outline-offset: 3px; }
+.project-card-linked a { position: relative; z-index: 2; }
