@@ -12,7 +12,7 @@ const projects = [
   {
     id: '01',
     category: 'WEB DEVELOPMENT',
-    title: 'ApexPlanet Internship — PHP & MySQL Projects',
+    title: 'PHP & MySQL Projects',
     subtitle: 'PHP · MySQL · Full-Stack Web Development',
     description: 'Completed four internship tasks: a secure authentication system with bcrypt and JWT; a blog application with CRUD, image uploads, and user access control; an admin panel for users, posts, and categories with role-based authorization; and security enhancements covering SQL injection prevention, XSS protection, password handling, and session management.',
     tags: ['PHP', 'MySQL', 'Authentication', 'CRUD', 'Admin Panel', 'Security', 'XAMPP'],
@@ -155,7 +155,7 @@ const projects = [
   {
     id: '12',
     category: 'INTERNSHIP',
-    title: 'Mallikarjuna Infosys — Data Analytics & Business Intelligence',
+    title: 'Data Analytics & Business Intelligence',
     subtitle: 'Data Analytics · Business Intelligence',
     description: 'Completed internship work focused on Data Analytics and Business Intelligence. Visit the repository to review the available project files and implementation details.',
     tags: ['Data Analytics', 'Business Intelligence', 'Internship'],
@@ -168,7 +168,7 @@ const projects = [
   {
     id: '13',
     category: 'AUTOMATION',
-    title: 'Pinnacle Python Development Internship',
+    title: 'Python Development Internship',
     subtitle: 'Python · Development',
     description: 'Python development work completed during the Pinnacle internship. Visit the repository to review the individual tasks and source code.',
     tags: ['Python', 'Development', 'Internship'],
