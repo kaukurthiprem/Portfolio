@@ -281,7 +281,7 @@ function App() {
     <main>
       <section className="hero page-width" id="home">
         <div className="hero-left">
-          <div className="eyebrow"><span className="eyebrow-line"/> SOFTWARE DEVELOPER · PORTFOLIO 2026</div>
+          <div className="eyebrow"><span className="eyebrow-line"/> SOFTWARE DEVELOPER · </div>
           <h1>Building digital<br/>things with <span className="highlight">purpose.</span></h1>
           <p className="hero-intro">I'm <strong>Kasukurthi Prem Kumar</strong> — a developer interested in web applications, backend systems, data analysis, and machine learning. I like making ideas work, not just look good.</p>
           <div className="hero-buttons">
